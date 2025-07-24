@@ -120,3 +120,26 @@ color:rgb(37, 36, 50);
     gap: 20px;
 
 }
+
+/* Plants Lover Section */
+
+.Plants-Lover-Section{
+    display: flex;
+    margin-top: 200px;
+    gap: 60px;
+}
+
+.title-3{
+    font-size: 60px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.discription-style{
+    font-size: 22px;
+    font-weight: regular;
+    color: rgba(0, 0, 0, 0.5);
+    /* font-family:inherit; */
+
+}
+
