@@ -15,8 +15,6 @@
   }
   
 
-
-
 /* Noto Serif google font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -30,6 +28,9 @@
       "wdth" 100;
   }
 
+
+/* Text/Medium/Bold */
+
 /* width and height setup */
   .width-margin{
     width: 1140px;
@@ -40,13 +41,14 @@
 .navbar{
     display: flex;
     justify-content: space-between ;
-   
-    margin-top: 35px;  
+    margin-top: 45px;  
     
 }
 .nav-link{
     display: flex;
     text-decoration: none;
+    color: rgb(37, 36, 50);
+    font-size: 20px;
 }
 
 .nav-items{
@@ -58,7 +60,6 @@ color:rgb(37, 36, 50);
 /* banner section style */
 .banner{
     display: flex;
-    
     margin-top: 120px;
 }
 
@@ -73,8 +74,6 @@ color:rgb(37, 36, 50);
     color: rgba(0, 0, 0, 0.5);
 
 }
-
-
 
 .color-font{
     color: #E95A08;
@@ -170,3 +169,32 @@ top: 2020px;
 
 }
 
+
+
+
+/* Responsive media query */
+
+@media screen and (max-width: 576px){
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        
+    }
+    .{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
+
+/* responsive container */
+
+@media  screen and (max-width : 576px) {
+    .container{
+        grid-template-columns: 2fr;
+
+
+
+    } 
+}
