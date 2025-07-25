@@ -286,22 +286,51 @@ top: 2020px;
 
 
 
-
-
-
-
 /* footer section */
 
 .footer-style{
     display: flex;
     margin-top: 80px;
+    /* text-decoration: none; */
+
+}
+
+
+.item{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+  font-size: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 40px;
 }
 
 
 
+.social-icon{
 
+display: flex;
+justify-content: center;
+gap: 20px;
+padding:20px 0px;
+}
 
+.social-icon img{
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: transform 0.3s ;
+}
 
+.social-icon img:hover{
+  transform: scale(1.3);
+}
 
 
 
