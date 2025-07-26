@@ -357,9 +357,49 @@ padding:20px 0px;
 
 
 
+/*  header section responsive */
 
+@media screen and (max-width: 576px) {
+  /* Navbar: hide first 3 nav items (Home, Shop, About Us) */
+  .nav-items:nth-child(-n+3) {
+    display: none;
+  }
 
+  /* Keep nav-link flex gap smaller */
+  .nav-link {
+    gap: 10px;
+  }
 
+  /* Banner: column layout */
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Order fix: image on top, text below */
+  .banner > div.items {
+    order: 2;
+  }
+
+  .banner > div:nth-child(2) {
+    order: 1;
+  }
+
+  .banner img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Smaller fonts on mobile */
+  .title {
+    font-size: 36px;
+  }
+
+  .discreption {
+    font-size: 18px;
+    max-width: 100%;
+  }
+}
 
 
 
@@ -399,7 +439,7 @@ padding:20px 0px;
       gap: 40px;
       margin-top: 100px;
       padding: 0 20px;
-      text-align: center;
+      text-align: left;
     }
   
     .title-3 {
@@ -408,11 +448,14 @@ padding:20px 0px;
   
     .discription-style {
       font-size: 18px;
-      align-items: center;
+      align-items: left;
     }
   
     .image-left img {
       max-width: 100%;
+    }
+    .trust-image {
+      display: none;
     }
   }
   
