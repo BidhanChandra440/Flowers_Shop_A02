@@ -313,7 +313,6 @@ top: 2020px;
 .footer-style{
     display: flex;
     margin-top: 80px;
-    /* text-decoration: none; */
 
 }
 
@@ -364,6 +363,7 @@ padding:20px 0px;
 
 
 
+
 /* container section  Responsive media query */
 
 @media screen and (max-width: 576px) {
@@ -391,6 +391,47 @@ padding:20px 0px;
     }
   }
   
+/* Least  deal section  responsive style */
+
+@media screen and (max-width:576px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;     /* কার্ডগুলো center হবে */
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .left-column {
+    width: 100%;
+    align-items: center;     /* ছোট স্ক্রিনে column center হবে */
+  }
+
+  .small-card,
+  .large-card {
+    width: 90vw;            /* স্ক্রিন অনুযায়ী responsive width */
+    height: auto;           /* height auto দিলে image এর অনুপাতে থাকবে */
+  }
+
+  .small-card img,
+  .large-card img {
+    height: auto;           /* image proper scale-এ দেখাবে */
+  }
+
+  .overlay-text {
+    font-size: 20px;        /* ছোট স্ক্রিনে font ছোট হবে */
+    padding: 10px;
+  }
+
+  .shop-now {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+}
+
+
+
+
+
 
 /* join section responsive style */
 
@@ -420,5 +461,37 @@ padding:20px 0px;
     width: auto;
   }
 }
+
+
+
+/* footer section responsive style */
+
+@media screen and (max-width: 576px) {
+  .footer-style {
+    flex-direction: column;        
+    align-items: left;           
+    gap: 10px;                     
+    padding: 20px;
+  }
+
+  .link {
+    padding: 0;
+    align-items: left;           
+    text-align: left;            
+  }
+
+  .social-icon {
+    justify-content: left;
+    flex-wrap: wrap;               
+    padding: 10px 0;
+    gap: 15px;
+  }
+
+  .social-icon img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 
 
