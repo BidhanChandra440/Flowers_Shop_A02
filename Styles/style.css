@@ -12,6 +12,7 @@
   .font-style{
     color: #E95A08;
     font-size: 30px;
+    cursor: pointer;
   }
   
 
@@ -48,6 +49,19 @@
     text-decoration: none;
     color: rgb(37, 36, 50);
     font-size: 20px;
+    cursor: pointer;
+}
+.nav-link2{
+  text-decoration: none;
+  font-size:20px ;
+  color: #8987A1;
+  cursor: pointer;
+}
+.nav-link3{
+  text-decoration: none;
+  font-size:20px ;
+  color: #8987A1;
+  cursor: pointer;
 }
 
 .nav-items{
@@ -124,6 +138,13 @@ color:rgb(37, 36, 50);
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ;
+
+}
+.button-setup:hover{
+  background-color: gray;
+
 }
 
 
@@ -223,7 +244,11 @@ top: 2020px;
         padding: 8px 16px;
         text-decoration: none;
         color: black;
+        cursor: pointer;
 
+      }
+      .shop-now:hover{
+        background-color: palevioletred;
       }
 
       .font-size{
@@ -305,6 +330,11 @@ top: 2020px;
 
 }
 
+.subscribe-form button:hover{
+  background-color: grey;
+}
+
+
 
 
 /* footer section */
@@ -329,7 +359,9 @@ top: 2020px;
   justify-content: flex-start;
   align-items: start;
   gap: 40px;
+  cursor: pointer;
 }
+
 
 
 
